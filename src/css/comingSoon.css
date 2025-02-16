@@ -1,0 +1,132 @@
+.coming-soon-container {
+    width: 100%;
+    height: 100vh;
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: url('../assets/vectors/leave_pattern.png');
+}
+
+.coming-soon {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    padding: 50px;
+    background: #9443FF30;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+
+.coming-soon .content-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container .headings {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.content-container .headings h1 {
+    font-size: 3em;
+    line-height: 1.3em;
+}
+
+.content-container .headings p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    color: #290557;
+}
+
+.subscribtion-container {
+    width: 100%;
+}
+
+.subscribtion-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 15px;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="email"] {
+    font-size: 16px;
+    padding: 10px 12px;
+    width: 100%;
+    max-width: 300px;
+}
+
+input[type="submit"] {
+    max-width: 300px;
+    font-size: 14px;
+    padding: 11px 20px;
+    background: #101415;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background: #fff;
+    color: #101415;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 980px) {
+    .coming-soon-container {
+        padding: 30px;
+    }
+
+    .subscribtion-form {
+        flex-direction: column;
+        gap: 12px 0;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .coming-soon-container {
+        align-items: center;
+        padding: 30px;
+    }
+
+    .coming-soon {
+        padding: 20px;
+    }
+
+    .content-container .headings h1 {
+        font-size: 2.3em;
+    }
+
+    .content-container .headings p {
+        font-size: 1.08em;
+    }
+
+    .subscribtion-form {
+        flex-direction: column;
+        gap: 12px 0;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}

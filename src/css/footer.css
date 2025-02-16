@@ -1,0 +1,145 @@
+footer {
+    width: 100%;
+    background: #0E001F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 50px;
+    color: #fff;
+}
+
+.column {
+    width: 300px;
+}
+
+#company-info,
+#social-icons {
+    padding: 12px 0;
+}
+
+/* #logo h1 {
+    font-size: 36px;
+    line-height: 1.6em;
+} */
+
+#logo img {
+    width: 180px;
+}
+
+#logo h1 a {
+    color: #fff;
+}
+
+#company-info p {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+#social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+#social-icons i {
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+#social-icons .fa-brands {
+    transition: 0.3s all ease-in-out;
+}
+
+#social-icons .fa-youtube:hover {
+    color: #FF0000;
+}
+
+#social-icons .fa-instagram:hover {
+    background: -webkit-linear-gradient(35deg, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FCAF45, #FFDC80) 0% 0% / 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#social-icons .fa-linkedin:hover {
+    color: #0077B5;
+}
+
+#social-icons .fa-x-twitter:hover {
+    color: #1DA1F2;
+}
+
+.column h3 {
+    font-size: 22px;
+    line-height: 1.6em;
+    color: #dcc2ff;
+}
+
+.column ul li {
+    list-style: none;
+}
+
+.column ul li a {
+    color: #fff;
+    line-height: 2.2em;
+    transition: 0.3s all ease-in-out;
+}
+
+.column ul li a:hover {
+    color: rgb(148, 67, 255);
+}
+
+.copyright-row {
+    width: 100%;
+    color: #fff;
+}
+
+#copyright {
+    width: 80%;
+    padding: 20px 0;
+}
+
+#copyright p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6em;
+}
+
+#copyright p a {
+    color: #fff;
+}
+
+@media screen and (max-width: 980px) {
+    .footer-row {
+        width: 100%;
+        display: block;
+        padding: 10px 30px;
+    }
+
+    .column {
+        width: 80%;
+        margin-top: 25px;
+    }
+
+    #social-icons i {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .footer-row {
+        width: 100%;
+        display: block;
+        padding: 10px 30px;
+    }
+
+    .column {
+        width: 100%;
+        margin-top: 25px;
+    }
+}

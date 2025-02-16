@@ -1,0 +1,133 @@
+.header {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0E001F;
+    padding: 12px 50px;
+    z-index: 10 !important;
+    transition: 0.2s all ease-out;
+}
+
+.logo img {
+    width: 9rem;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navlink {
+    font-family: var(--header-font);
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #fff;
+    list-style: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: 0.2s all ease-in-out;
+}
+
+.navlink:hover {
+    color: var(--primary-dark);
+    background: #fff;
+}
+
+.navlink a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navlink:hover a {
+    color: var(--primary-dark);
+}
+
+.navlinkActive {
+    font-family: var(--header-font);
+    font-size: 0.9em;
+    font-weight: 500;
+    color: var(--primary-dark);
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    list-style: none;
+}
+
+.navlinkActive a {
+    text-decoration: none;
+    color: var(--primary-dark);
+}
+
+.header.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 12px 50px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#menu-toggle {
+    display: none;
+    color: #fff;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+@media screen and (max-width:980px) {
+
+    .header,
+    .header.sticky {
+        padding: 15px 30px;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: -500px;
+        right: 0;
+        width: 90%;
+        max-width: 500px;
+        background: #190334;
+        display: block;
+        margin: 8px;
+        padding: 15px 15px 25px 15px;
+        border-radius: 12px;
+        opacity: 0;
+        transition: 0.8s all ease-in-out;
+        z-index: -5;
+    }
+
+    .navbar .nav {
+        display: block;
+    }
+
+    .navbar .nav .navlink {
+        margin-bottom: 12px;
+    }
+
+    .navlinkActive {
+        margin-bottom: 12px;
+    }
+
+    .menu-active {
+        position: absolute;
+        top: 100%;
+        display: block;
+        opacity: 1;
+        transition: 0.2s all ease-in-out opacity 0.1s ease-in-out;
+    }
+}

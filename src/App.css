@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import "transition-style";
+
+:root {
+  --header-font: 'Poppins', sans-serif;
+  --para-font: 'Roboto', sans-serif;
+  --primary: #9443FF;
+  --primary-dark: #290557;
+  --para-color: #616161;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+}
+
+p {
+  font-family: var(--para-font);
+  color: var(--para-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.lightBtn {
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--header-font);
+  font-size: 0.8em;
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+.lightBtn:hover {
+  background: #fff;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.darkBtn {
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--header-font);
+  font-size: 0.92em;
+  background: var(--primary-dark);
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 6px;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+.darkBtn:hover {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 500;
+}
+
+.eventBtn {
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--header-font);
+  font-size: 0.92em;
+  background: #eaeaea;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+/* .darkBtn:hover {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 500;
+} */
+
+@media screen and (max-width:980px) {
+  .lightBtn {
+    font-size: 0.82em;
+  }
+
+  .darkBtn {
+    font-size: 0.82em;
+  }
+}
+
+@media screen and (max-width:980px) {
+  .lightBtn {
+    padding: 10px 16px;
+    font-size: 0.78em;
+  }
+
+  .darkBtn {
+    padding: 10px 16px;
+    font-size: 0.78em;
+  }
+}
